@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+/*
+**
+** Copyright 2008, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+ -->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="english_ime_input_options">"Įvesties parinktys"</string>
+    <string name="vibrate_on_keypress">"Vibruoti, kai paspaudžiami klavišai"</string>
+    <string name="sound_on_keypress">"Klavišo paspaudimo garsas"</string>
+    <string name="popup_on_keypress">"Iššoka paspaudus klavišą"</string>
+    <string name="settings_screen_preferences">"Nuostatos"</string>
+    <string name="settings_screen_appearance">"Išvaizda ir išdėstymai"</string>
+    <string name="settings_screen_advanced">"Išplėstiniai"</string>
+    <string name="settings_screen_theme">"Tema"</string>
+    <string name="abbreviation_unit_milliseconds">"<xliff:g id="MILLISECONDS">%s</xliff:g> ms"</string>
+    <string name="settings_system_default">"Sist. numat. nustat."</string>
+    <string name="auto_cap">"Automatinis didžiųjų raidžių rašymas"</string>
+    <string name="auto_cap_summary">"Kiekvieno sakinio pirmą žodį rašyti iš didžiosios raidės"</string>
+    <string name="language_selection_title">"Kalbos"</string>
+    <string name="select_language">"Kalbos"</string>
+    <string name="subtype_en_GB">"Anglų k. (JK)"</string>
+    <string name="subtype_en_US">"Anglų k. (JAV)"</string>
+    <string name="subtype_es_US">"Ispanų k. (JAV)"</string>
+    <string name="subtype_sr_ZZ">"Serbų k. (lot. rašmenys)"</string>
+    <string name="subtype_generic_traditional">"<xliff:g id="LANGUAGE_NAME">%s</xliff:g> (tradicinė)"</string>
+    <string name="subtype_generic_compact">"<xliff:g id="LANGUAGE_NAME">%s</xliff:g> (kompaktiška)"</string>
+    <string name="subtype_no_language">"Kalbos nėra (abėcėlė)"</string>
+    <string name="subtype_no_language_qwerty">"Abėcėlė (QWERTY)"</string>
+    <string name="custom_input_styles_title">"Pasirinkti įvesties stilių"</string>
+    <string name="add_style">"Prid. stilių"</string>
+    <string name="add">"Pridėti"</string>
+    <string name="remove">"Pašalinti"</string>
+    <string name="save">"Išsaugoti"</string>
+    <string name="subtype_locale">"Kalba"</string>
+    <string name="keyboard_layout_set">"Išdėstymas"</string>
+    <string name="custom_input_style_note_message">"Norint pradėti naudoti pasirinkiamą įvesties stilių, reikia jį įgalinti. Ar norite įgalinti jį dabar?"</string>
+    <string name="enable">"Įgalinti"</string>
+    <string name="not_now">"Ne dabar"</string>
+    <string name="custom_input_style_already_exists">"Toks pat įvesties stilius jau yra: <xliff:g id="INPUT_STYLE_NAME">%s</xliff:g>"</string>
+    <string name="prefs_keypress_vibration_duration_settings">"Vibrav. paspaudus mygt. trukmė"</string>
+    <string name="prefs_keypress_sound_volume_settings">"Garso paspaudus mygt. garsumas"</string>
+    <string name="prefs_key_longpress_timeout_settings">"Klavišo ilgo paspaudimo delsa"</string>
+    <string name="button_default">"Numatytieji"</string>
+    <string name="prefs_keyboard_height_settings">Klaviatūros aukštis</string>
+    <string name="keyboard_color">Keisti klaviatūros spalvą</string>
+    <string name="hide_special_chars">Paslėpti specialius simbolius</string>
+    <string name="hide_language_switch_key">Paslėpti kalbos pasirinkimą</string>
+    <string name="show_number_row">Rodyti skaičių eilutę</string>
+    <string name="space_swipe">Judinti kursorių tarpo klavišu</string>
+    <string name="delete_swipe">Trynimo klavišo braukimas</string>
+    <string name="matching_navbar_color">Atitinkama navigacijos juostos spalva</string>
+    <string name="setup_message">LokiBoard Keyboard yra neįgalinta. Spauskite OK kad atidaryti Kalbos ir įvestis nustatymus. LokiBoard Keyboard galėsite pasirinkti dabartinėje klaviatūroje.</string>
+</resources>

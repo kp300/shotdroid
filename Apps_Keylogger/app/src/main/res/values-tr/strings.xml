@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+/*
+**
+** Copyright 2008, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+ -->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="english_ime_input_options">"Giriş seçenekleri"</string>
+    <string name="vibrate_on_keypress">"Tuşa basıldığında titret"</string>
+    <string name="sound_on_keypress">"Tuşa basıldığında ses çıkar"</string>
+    <string name="popup_on_keypress">"Tuşa basıldığında pop-up aç"</string>
+    <string name="settings_screen_preferences">"Tercihler"</string>
+    <string name="settings_screen_appearance">"Görünüm ve Düzenler"</string>
+    <string name="settings_screen_advanced">"Gelişmiş"</string>
+    <string name="settings_screen_theme">"Tema"</string>
+    <string name="abbreviation_unit_milliseconds">"<xliff:g id="MILLISECONDS">%s</xliff:g> ms"</string>
+    <string name="settings_system_default">"Sistem varsayılanı"</string>
+    <string name="auto_cap">"Otomatik büyük harf yap"</string>
+    <string name="auto_cap_summary">"Her cümlenin ilk harfini büyük harf yap"</string>
+    <string name="language_selection_title">"Diller"</string>
+    <string name="select_language">"Diller"</string>
+    <string name="subtype_en_GB">"İngilizce (BK)"</string>
+    <string name="subtype_en_US">"İngilizce (ABD)"</string>
+    <string name="subtype_es_US">"İspanyolca (ABD)"</string>
+    <string name="subtype_sr_ZZ">"Sırpça (Latin alfabesi)"</string>
+    <string name="subtype_generic_traditional">"<xliff:g id="LANGUAGE_NAME">%s</xliff:g> (Geleneksel)"</string>
+    <string name="subtype_generic_compact">"<xliff:g id="LANGUAGE_NAME">%s</xliff:g> (Kompakt)"</string>
+    <string name="subtype_no_language">"Dil yok (Alfabe)"</string>
+    <string name="subtype_no_language_qwerty">"Alfabe (QWERTY)"</string>
+    <string name="custom_input_styles_title">"Özel giriş stilleri"</string>
+    <string name="add_style">"Stil ekle"</string>
+    <string name="add">"Ekle"</string>
+    <string name="remove">"Kaldır"</string>
+    <string name="save">"Kaydet"</string>
+    <string name="subtype_locale">"Dil"</string>
+    <string name="keyboard_layout_set">"Düzen"</string>
+    <string name="custom_input_style_note_message">"Kullanmaya başlamadan önce özel giriş stilinizin etkinleştirilmesi gerekiyor. Şimdi etkinleştirmek ister misiniz?"</string>
+    <string name="enable">"Etkinleştir"</string>
+    <string name="not_now">"Şimdi değil"</string>
+    <string name="custom_input_style_already_exists">"Aynı giriş stili zaten var: <xliff:g id="INPUT_STYLE_NAME">%s</xliff:g>"</string>
+    <string name="prefs_keypress_vibration_duration_settings">"Tuşa basma titreşim süresi"</string>
+    <string name="prefs_keypress_sound_volume_settings">"Tuşa basma ses seviyesi"</string>
+    <string name="prefs_key_longpress_timeout_settings">"Tuşa uzun basma gecikmesi"</string>
+    <string name="button_default">"Varsayılan"</string>
+    <string name="prefs_keyboard_height_settings">Klavye yüksekliği</string>
+    <string name="keyboard_color">Özel klavye rengi ayarla</string>
+    <string name="hide_special_chars">Özel karakterleri gizle</string>
+    <string name="hide_language_switch_key">Dil değiştirme tuşunu gizle</string>
+    <string name="show_number_row">Ayrık rakam satırını göster</string>
+    <string name="space_swipe">Boşluk tuşunda kaydırarak imleci taşı</string>
+    <string name="delete_swipe">Sil tuşu kaydırması</string>
+    <string name="matching_navbar_color">Eşleşen gezinti çubuğu rengini kullan</string>
+    <string name="setup_message">LokiBoard Keyboard etkin değil. Diller &amp; Giriş ayarlarını açmak için Tamam\'ı tıklayın. Kullanmak için geçerli klavyenizde LokiBoard Keyboard\'u seçmeniz gerekmektedir.</string>
+</resources>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+/*
+**
+** Copyright 2008, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+ -->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="english_ime_input_options">"ਇਨਪੁਟ ਚੋਣਾਂ"</string>
+    <string name="vibrate_on_keypress">"ਕੁੰਜੀ ਦਬਾਉਣ ’ਤੇ ਥਰਥਰਾਹਟ ਕਰੋ"</string>
+    <string name="sound_on_keypress">"ਕੁੰਜੀ ਦਬਾਉਣ \'ਤੇ ਧੁਨ ਵਜਾਓ"</string>
+    <string name="popup_on_keypress">"ਕੁੰਜੀ ਦਬਾਉਣ ’ਤੇ ਪੌਪਅੱਪ ਕਰੋ"</string>
+    <string name="settings_screen_preferences">"ਤਰਜੀਹਾਂ"</string>
+    <string name="settings_screen_appearance">"ਪ੍ਰਗਟਾਅ &amp; ਲੇਆਉਟਸ"</string>
+    <string name="settings_screen_advanced">"ਉੱਨਤ"</string>
+    <string name="settings_screen_theme">"ਵਿਸ਼ਾ"</string>
+    <string name="abbreviation_unit_milliseconds">"<xliff:g id="MILLISECONDS">%s</xliff:g>ms"</string>
+    <string name="settings_system_default">"ਸਿਸਟਮ ਡਿਫੌਲਟ"</string>
+    <string name="auto_cap">"ਆਟੋ-ਕੈਪਿਟਲਾਈਜ਼ੇਸ਼ਨ"</string>
+    <string name="auto_cap_summary">"ਹਰੇਕ ਵਾਕ ਦਾ ਪਹਿਲਾ ਸ਼ਬਦ ਕੈਪੀਟਲਾਈਜ਼ ਕਰੋ"</string>
+    <string name="language_selection_title">"ਭਾਸ਼ਾਵਾਂ"</string>
+    <string name="select_language">"ਭਾਸ਼ਾਵਾਂ"</string>
+    <string name="subtype_en_GB">"ਅੰਗ੍ਰੇਜ਼ੀ (ਯੂਕੇ)"</string>
+    <string name="subtype_en_US">"ਅੰਗ੍ਰੇਜੀ (ਅਮਰੀਕਾ)"</string>
+    <string name="subtype_es_US">"ਸਪੇਨੀ (ਅਮਰੀਕਾ)"</string>
+    <string name="subtype_sr_ZZ">"ਸਰਬੀਅਨ (ਲਾਤੀਨੀ)"</string>
+    <string name="subtype_generic_traditional">"<xliff:g id="LANGUAGE_NAME">%s</xliff:g> (ਪਰੰਪਰਿਕ)"</string>
+    <string name="subtype_generic_compact">"<xliff:g id="LANGUAGE_NAME">%s</xliff:g> (ਕੰਪੈਕਟ)"</string>
+    <string name="subtype_no_language">"ਕੋਈ ਭਾਸ਼ਾ ਨਹੀਂ (ਵਰਨਮਾਲਾ)"</string>
+    <string name="subtype_no_language_qwerty">"ਵਰਨਮਾਲਾ (QWERTY)"</string>
+    <string name="custom_input_styles_title">"ਕਸਟਮ ਇਨਪੁਟ ਸਟਾਈਲ"</string>
+    <string name="add_style">"ਸਟਾਈਲ ਜੋੜੋ"</string>
+    <string name="add">"ਜੋੜੋ"</string>
+    <string name="remove">"ਹਟਾਓ"</string>
+    <string name="save">"ਰੱਖਿਅਤ ਕਰੋ"</string>
+    <string name="subtype_locale">"ਭਾਸ਼ਾ"</string>
+    <string name="keyboard_layout_set">"ਲੇਆਉਟ"</string>
+    <string name="custom_input_style_note_message">"ਇਸਤੋਂ ਪਹਿਲਾਂ ਕਿ ਤੁਸੀਂ ਆਪਣਾ ਕਸਟਮ ਇਨਪੁਟ ਸਟਾਈਲ ਵਰਤਣਾ ਸ਼ੁਰੂ ਕਰੋ ਤੁਹਾਨੂੰ ਇਸਨੂੰ ਸਮਰੱਥ ਬਣਾਉਣ ਦੀ ਲੋੜ ਹੈ। ਕੀ ਤੁਸੀਂ ਹੁਣ ਇਸਨੂੰ ਸਮਰੱਥ ਬਣਾਉਣਾ ਚਾਹੁੰਦੇ ਹੋ?"</string>
+    <string name="enable">"ਸਮਰੱਥ ਬਣਾਓ"</string>
+    <string name="not_now">"ਅਜੇ ਨਹੀਂ"</string>
+    <string name="custom_input_style_already_exists">"ਸਮਾਨ ਇਨਪੁਟ ਸਟਾਈਲ ਪਹਿਲਾਂ ਹੀ ਮੌਜੂਦ ਹੈ: <xliff:g id="INPUT_STYLE_NAME">%s</xliff:g>"</string>
+    <string name="prefs_keypress_vibration_duration_settings">"ਕੀਪ੍ਰੈਸ ਵਾਈਬ੍ਰੇਸ਼ਨ ਮਿਆਦ"</string>
+    <string name="prefs_keypress_sound_volume_settings">"ਕੀਪ੍ਰੈਸ ਅਵਾਜ਼ ਵੌਲਿਊਮ"</string>
+    <string name="prefs_key_longpress_timeout_settings">"ਕੁੰਜੀ ਦਬਾਈ ਰੱਖਣ ਦੀ ਮਿਆਦ"</string>
+    <string name="button_default">"ਡਿਫੌਲਟ"</string>
+</resources>

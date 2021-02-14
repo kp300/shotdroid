@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+/*
+**
+** Copyright 2008, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+ -->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="english_ime_input_options">"Pilihan input"</string>
+    <string name="vibrate_on_keypress">"Getar pada tekanan kekunci"</string>
+    <string name="sound_on_keypress">"Bunyi pada tekanan kekunci"</string>
+    <string name="popup_on_keypress">"Pop timbul pada tekanan kunci"</string>
+    <string name="settings_screen_preferences">"Pilihan"</string>
+    <string name="settings_screen_appearance">"Penampilan &amp; Bentangan"</string>
+    <string name="settings_screen_advanced">"Lanjutan"</string>
+    <string name="settings_screen_theme">"Tema"</string>
+    <string name="abbreviation_unit_milliseconds">"<xliff:g id="MILLISECONDS">%s</xliff:g>ms"</string>
+    <string name="settings_system_default">"Tetapan asal sistem"</string>
+    <string name="auto_cap">"Autopenghurufbesaran"</string>
+    <string name="auto_cap_summary">"Besarkan perkataan pertama setiap ayat"</string>
+    <string name="language_selection_title">"Bahasa"</string>
+    <string name="select_language">"Bahasa"</string>
+    <string name="subtype_en_GB">"Bahasa Inggeris (UK)"</string>
+    <string name="subtype_en_US">"Bahasa Inggeris (Australia)"</string>
+    <string name="subtype_es_US">"Bahasa Sepanyol (AS)"</string>
+    <string name="subtype_sr_ZZ">"Bahasa Serbia (Latin)"</string>
+    <string name="subtype_generic_traditional">"<xliff:g id="LANGUAGE_NAME">%s</xliff:g> (Tradisional)"</string>
+    <string name="subtype_generic_compact">"<xliff:g id="LANGUAGE_NAME">%s</xliff:g> (Sarat)"</string>
+    <string name="subtype_no_language">"Tiada bahasa (Abjad)"</string>
+    <string name="subtype_no_language_qwerty">"Abjad (QWERTY)"</string>
+    <string name="custom_input_styles_title">"Gaya input peribadi"</string>
+    <string name="add_style">"Tambah gaya"</string>
+    <string name="add">"Tambah"</string>
+    <string name="remove">"Alih Keluar"</string>
+    <string name="save">"Simpan"</string>
+    <string name="subtype_locale">"Bahasa"</string>
+    <string name="keyboard_layout_set">"Reka letak"</string>
+    <string name="custom_input_style_note_message">"Gaya input tersuai anda perlu didayakan sebelum anda mula menggunakannya. Adakah anda ingin mendayakannya sekarang?"</string>
+    <string name="enable">"Dayakan"</string>
+    <string name="not_now">"Bukan sekarang"</string>
+    <string name="custom_input_style_already_exists">"The same input style already exists: <xliff:g id="INPUT_STYLE_NAME">%s</xliff:g>"</string>
+    <string name="prefs_keypress_vibration_duration_settings">"Tempoh getaran tekan kekunci"</string>
+    <string name="prefs_keypress_sound_volume_settings">"Kelantangan bunyi tekan kekunci"</string>
+    <string name="prefs_key_longpress_timeout_settings">"Lengah tekan lama kekunci"</string>
+    <string name="button_default">"Lalai"</string>
+</resources>

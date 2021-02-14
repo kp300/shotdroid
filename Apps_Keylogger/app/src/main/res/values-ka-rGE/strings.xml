@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+/*
+**
+** Copyright 2008, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+ -->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="english_ime_input_options">"შეყვანის მეთოდები"</string>
+    <string name="vibrate_on_keypress">"ვიბრაცია კლავიშზე დაჭერისას"</string>
+    <string name="sound_on_keypress">"ხმა კლავიშზე დაჭერისას"</string>
+    <string name="popup_on_keypress">"გადიდება ღილაკზე დაჭერისას"</string>
+    <string name="settings_screen_preferences">"პარამეტრები"</string>
+    <string name="settings_screen_appearance">"იერსახე &amp; განლაგებები"</string>
+    <string name="settings_screen_advanced">"გაფართოებული"</string>
+    <string name="settings_screen_theme">"თემა"</string>
+    <string name="abbreviation_unit_milliseconds">"<xliff:g id="MILLISECONDS">%s</xliff:g>მწმ"</string>
+    <string name="settings_system_default">"სისტემის ნაგულისხმევი"</string>
+    <string name="auto_cap">"ავტო-კაპიტალიზაცია"</string>
+    <string name="auto_cap_summary">"ყოველი წინადადების პირველი სიტყვის კაპიტალიზაცია"</string>
+    <string name="language_selection_title">"ენები"</string>
+    <string name="select_language">"ენები"</string>
+    <string name="subtype_en_GB">"ინგლისური (გართ. სამ.)"</string>
+    <string name="subtype_en_US">"ინგლისური (აშშ)"</string>
+    <string name="subtype_es_US">"ესპანური (აშშ)"</string>
+    <string name="subtype_sr_ZZ">"სერბული (ლათინური)"</string>
+    <string name="subtype_generic_traditional">"<xliff:g id="LANGUAGE_NAME">%s</xliff:g> (ტრადიციული)"</string>
+    <string name="subtype_generic_compact">"<xliff:g id="LANGUAGE_NAME">%s</xliff:g> (კომპაქტური)"</string>
+    <string name="subtype_no_language">"ენის გარეშე (ლათინური ანბანი)"</string>
+    <string name="subtype_no_language_qwerty">"ანბანი (QWERTY)"</string>
+    <string name="custom_input_styles_title">"შეყვანის სტილების კონფიგურაცია"</string>
+    <string name="add_style">"სტილის დამატება"</string>
+    <string name="add">"დამატება"</string>
+    <string name="remove">"ამოშლა"</string>
+    <string name="save">"შენახვა"</string>
+    <string name="subtype_locale">"ენა"</string>
+    <string name="keyboard_layout_set">"განლაგება"</string>
+    <string name="custom_input_style_note_message">"თქვენი მორგებული შეყვანის სტილი გამოყენებამდე უნდა გაააქტიუროთ. გსურთ მისი აქტივაცია ახლა?"</string>
+    <string name="enable">"ჩართვა"</string>
+    <string name="not_now">"ახლა არა"</string>
+    <string name="custom_input_style_already_exists">"შეყვანის იგივე სტილი უკვე არსებობს: <xliff:g id="INPUT_STYLE_NAME">%s</xliff:g>"</string>
+    <string name="prefs_keypress_vibration_duration_settings">"კლავიშზე დაჭერის ვიბრაციის ხანგრძლივობა"</string>
+    <string name="prefs_keypress_sound_volume_settings">"კლავიშზე დაჭერის ხმა"</string>
+    <string name="prefs_key_longpress_timeout_settings">"კლავიშზე გრძელი დაჭერის დაყოვნება"</string>
+    <string name="button_default">"ნაგულისხმევი"</string>
+</resources>

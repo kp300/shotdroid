@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+/*
+**
+** Copyright 2008, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+ -->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="english_ime_input_options">"گزینه‌های ورودی"</string>
+    <string name="vibrate_on_keypress">"لرزش با فشار کلید"</string>
+    <string name="sound_on_keypress">"صدا با فشار کلید"</string>
+    <string name="popup_on_keypress">"بازشدن با فشار کلید"</string>
+    <string name="settings_screen_preferences">"تنظیمات برگزیده"</string>
+    <string name="settings_screen_appearance">"شکل ظاهری و چیدمان"</string>
+    <string name="settings_screen_advanced">"پیشرفته"</string>
+    <string name="settings_screen_theme">"طرح‌زمینه"</string>
+    <string name="abbreviation_unit_milliseconds">"<xliff:g id="MILLISECONDS">%s</xliff:g> میلی‌ثانیه"</string>
+    <string name="settings_system_default">"پیش‌فرض سیستم"</string>
+    <string name="auto_cap">"بزرگ‌کردن خودکار حروف"</string>
+    <string name="auto_cap_summary">"بزرگ‌نویسی کلمه اول هر جمله"</string>
+    <string name="language_selection_title">"زبان‌ها"</string>
+    <string name="select_language">"زبان‌ها"</string>
+    <string name="subtype_en_GB">"انگلیسی (بریتانیا)"</string>
+    <string name="subtype_en_US">"انگلیسی (امریکا)"</string>
+    <string name="subtype_es_US">"اسپانیایی (امریکا)"</string>
+    <string name="subtype_sr_ZZ">"صربی (لاتین)"</string>
+    <string name="subtype_generic_traditional">"<xliff:g id="LANGUAGE_NAME">%s</xliff:g> (سنتی)"</string>
+    <string name="subtype_generic_compact">"<xliff:g id="LANGUAGE_NAME">%s</xliff:g> (فشرده)"</string>
+    <string name="subtype_no_language">"بدون زبان (حروف الفبا)"</string>
+    <string name="subtype_no_language_qwerty">"‏حروف الفبا (QWERTY)"</string>
+    <string name="custom_input_styles_title">"سبک‌های ورودی سفارشی"</string>
+    <string name="add_style">"افزودن سبک"</string>
+    <string name="add">"افزودن"</string>
+    <string name="remove">"حذف"</string>
+    <string name="save">"ذخیره"</string>
+    <string name="subtype_locale">"زبان"</string>
+    <string name="keyboard_layout_set">"چیدمان"</string>
+    <string name="custom_input_style_note_message">"سبک ورودی سفارشی شما باید قبل از شروع به استفاده از آن فعال شود. می‌خواهید اکنون آن را فعال کنید؟"</string>
+    <string name="enable">"فعال کردن"</string>
+    <string name="not_now">"اکنون نه"</string>
+    <string name="custom_input_style_already_exists">"سبک ورودی مشابهی در حال حاضر وجود دارد: <xliff:g id="INPUT_STYLE_NAME">%s</xliff:g>"</string>
+    <string name="prefs_keypress_vibration_duration_settings">"طول مدت لرزش در اثر فشردن کلید"</string>
+    <string name="prefs_keypress_sound_volume_settings">"میزان صدای فشردن کلید"</string>
+    <string name="prefs_key_longpress_timeout_settings">"تأخیر فشار طولانی کلید"</string>
+    <string name="button_default">"پیش‌فرض"</string>
+    <string name="prefs_keyboard_height_settings">ارتفاع صفحه کلید</string>
+    <string name="keyboard_color">تنظیم رنگ صفحه کلید سفارشی</string>
+    <string name="hide_special_chars">پنهان کردن کاراکترهای ویژه</string>
+    <string name="hide_language_switch_key">پنهان کردن کلید تغییر زبان</string>
+    <string name="show_number_row">نمایش جداگانه ی شماره ردیف</string>
+    <string name="space_swipe">حرکت مکان نما توسط سوایپ کلید فاصله</string>
+    <string name="delete_swipe">حذف سوایپ</string>
+</resources>

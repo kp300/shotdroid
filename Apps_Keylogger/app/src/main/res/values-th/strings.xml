@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+/*
+**
+** Copyright 2008, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+ -->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="english_ime_input_options">"ตัวเลือกการป้อนข้อมูล"</string>
+    <string name="vibrate_on_keypress">"สั่นเมื่อกดปุ่ม"</string>
+    <string name="sound_on_keypress">"ส่งเสียงเมื่อกดปุ่ม"</string>
+    <string name="popup_on_keypress">"ป๊อปอัปเมื่อกดแป้น"</string>
+    <string name="settings_screen_preferences">"ค่ากำหนด"</string>
+    <string name="settings_screen_appearance">"ลักษณะที่ปรากฏและการจัดวาง"</string>
+    <string name="settings_screen_advanced">"ขั้นสูง"</string>
+    <string name="settings_screen_theme">"ธีม"</string>
+    <string name="abbreviation_unit_milliseconds">"<xliff:g id="MILLISECONDS">%s</xliff:g> มิลลิวิ"</string>
+    <string name="settings_system_default">"ค่าเริ่มต้นของระบบ"</string>
+    <string name="auto_cap">"ปรับเป็นตัวพิมพ์ใหญ่อัตโนมัติ"</string>
+    <string name="auto_cap_summary">"ทำให้คำแรกของทุกประโยคเป็นตัวพิมพ์ใหญ่"</string>
+    <string name="language_selection_title">"ภาษา"</string>
+    <string name="select_language">"ภาษา"</string>
+    <string name="subtype_en_GB">"อังกฤษ (สหราชอาณาจักร)"</string>
+    <string name="subtype_en_US">"อังกฤษ (อเมริกัน)"</string>
+    <string name="subtype_es_US">"สเปน (สหรัฐอเมริกา)"</string>
+    <string name="subtype_sr_ZZ">"เซอร์เบีย (ละติน)"</string>
+    <string name="subtype_generic_traditional">"<xliff:g id="LANGUAGE_NAME">%s</xliff:g> (ดั้งเดิม)"</string>
+    <string name="subtype_generic_compact">"<xliff:g id="LANGUAGE_NAME">%s</xliff:g> (แบบกะทัดรัด)"</string>
+    <string name="subtype_no_language">"ไม่มีภาษา (ตัวอักษรละติน)"</string>
+    <string name="subtype_no_language_qwerty">"ตัวอักษร (QWERTY)"</string>
+    <string name="custom_input_styles_title">"รูปแบบอินพุตกำหนดเอง"</string>
+    <string name="add_style">"เพิ่มสไตล์"</string>
+    <string name="add">"เพิ่ม"</string>
+    <string name="remove">"ลบ"</string>
+    <string name="save">"บันทึก"</string>
+    <string name="subtype_locale">"ภาษา"</string>
+    <string name="keyboard_layout_set">"การจัดวาง"</string>
+    <string name="custom_input_style_note_message">"ต้องเปิดใช้รูปแบบอินพุตที่กำหนดเองก่อน เปิดใช้เลยไหม"</string>
+    <string name="enable">"เปิดใช้งาน"</string>
+    <string name="not_now">"ข้ามไปก่อน"</string>
+    <string name="custom_input_style_already_exists">"รูปแบบการป้อนข้อมูลเดียวกันนี้มีอยู่แล้ว: <xliff:g id="INPUT_STYLE_NAME">%s</xliff:g>"</string>
+    <string name="prefs_keypress_vibration_duration_settings">"ระยะเวลาการสั่นเมื่อกดแป้นพิมพ์"</string>
+    <string name="prefs_keypress_sound_volume_settings">"ระดับเสียงเมื่อกดแป้นพิมพ์"</string>
+    <string name="prefs_key_longpress_timeout_settings">"การหน่วงเวลาของการกดแป้นค้าง"</string>
+    <string name="button_default">"ค่าเริ่มต้น"</string>
+</resources>

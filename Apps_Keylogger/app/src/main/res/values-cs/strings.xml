@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+/*
+**
+** Copyright 2008, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+ -->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="english_ime_input_options">"Možnosti zadávání textu a dat"</string>
+    <string name="vibrate_on_keypress">"Při stisku klávesy vibrovat"</string>
+    <string name="sound_on_keypress">"Zvuk při stisku klávesy"</string>
+    <string name="popup_on_keypress">"Detail znaku při stisku klávesy"</string>
+    <string name="settings_screen_preferences">"Předvolby"</string>
+    <string name="settings_screen_appearance">"Vzhled a rozvržení"</string>
+    <string name="settings_screen_advanced">"Rozšířená nastavení"</string>
+    <string name="settings_screen_theme">"Motiv"</string>
+    <string name="abbreviation_unit_milliseconds">"<xliff:g id="MILLISECONDS">%s</xliff:g> ms"</string>
+    <string name="settings_system_default">"Výchozí nastavení"</string>
+    <string name="auto_cap">"Velká písmena automaticky"</string>
+    <string name="auto_cap_summary">"Kapitalizace prvního slova každé věty"</string>
+    <string name="language_selection_title">"Jazyky"</string>
+    <string name="select_language">"Jazyky"</string>
+    <string name="subtype_en_GB">"angličtina (Velká Británie)"</string>
+    <string name="subtype_en_US">"angličtina (USA)"</string>
+    <string name="subtype_es_US">"španělština (USA)"</string>
+    <string name="subtype_sr_ZZ">"srbština (latinka)"</string>
+    <string name="subtype_generic_traditional">"<xliff:g id="LANGUAGE_NAME">%s</xliff:g> (tradiční)"</string>
+    <string name="subtype_generic_compact">"<xliff:g id="LANGUAGE_NAME">%s</xliff:g> (kompaktní)"</string>
+    <string name="subtype_no_language">"Žádný jazyk (latinka)"</string>
+    <string name="subtype_no_language_qwerty">"Latinka (QWERTY)"</string>
+    <string name="custom_input_styles_title">"Vlastní styl zadávání"</string>
+    <string name="add_style">"Přidat styl"</string>
+    <string name="add">"Přidat"</string>
+    <string name="remove">"Odebrat"</string>
+    <string name="save">"Uložit"</string>
+    <string name="subtype_locale">"Jazyk"</string>
+    <string name="keyboard_layout_set">"Rozvržení"</string>
+    <string name="custom_input_style_note_message">"Vlastní styl zadávání musíte nejdříve povolit. Povolit?"</string>
+    <string name="enable">"Povolit"</string>
+    <string name="not_now">"Teď ne"</string>
+    <string name="custom_input_style_already_exists">"Tento styl zadávání již existuje: <xliff:g id="INPUT_STYLE_NAME">%s</xliff:g>"</string>
+    <string name="prefs_keypress_vibration_duration_settings">"Délka vibrace při stisknutí klávesy"</string>
+    <string name="prefs_keypress_sound_volume_settings">"Hlasitost stisknutí klávesy"</string>
+    <string name="prefs_key_longpress_timeout_settings">"Prodleva dlouhého stisknutí"</string>
+    <string name="button_default">"Výchozí"</string>
+    <string name="prefs_keyboard_height_settings">Výška klávesnice</string>
+    <string name="keyboard_color">Nastavit barvu klávesnice</string>
+    <string name="hide_special_chars">Skrýt speciální znaky</string>
+    <string name="hide_language_switch_key">Skrýt klávesu pro přepínání jazyka</string>
+    <string name="show_number_row">Zobrazit samostatné číselné řady</string>
+    <string name="space_swipe">Táhnout kurzorem po mezerníku</string>
+</resources>

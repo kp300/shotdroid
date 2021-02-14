@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+/*
+**
+** Copyright 2008, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+ -->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="english_ime_input_options">"Invoeropties"</string>
+    <string name="vibrate_on_keypress">"Trillen bij toetsaanslag"</string>
+    <string name="sound_on_keypress">"Geluid bij toetsaanslag"</string>
+    <string name="popup_on_keypress">"Pop-up bij toetsaanslag"</string>
+    <string name="settings_screen_preferences">"Voorkeuren"</string>
+    <string name="settings_screen_appearance">"Uiterlijk en lay-out"</string>
+    <string name="settings_screen_advanced">"Geavanceerd"</string>
+    <string name="settings_screen_theme">"Thema"</string>
+    <string name="abbreviation_unit_milliseconds">"<xliff:g id="MILLISECONDS">%s</xliff:g> ms"</string>
+    <string name="settings_system_default">"Systeemstandaard"</string>
+    <string name="auto_cap">"Auto-hoofdlettergebruik"</string>
+    <string name="auto_cap_summary">"Het eerste woord van elke zin met een hoofdletter schrijven"</string>
+    <string name="language_selection_title">"Talen"</string>
+    <string name="select_language">"Talen"</string>
+    <string name="subtype_en_GB">"Engels (GB)"</string>
+    <string name="subtype_en_US">"Engels (VS)"</string>
+    <string name="subtype_es_US">"Spaans (VS)"</string>
+    <string name="subtype_sr_ZZ">"Servisch (Latijns)"</string>
+    <string name="subtype_generic_traditional">"<xliff:g id="LANGUAGE_NAME">%s</xliff:g> (traditioneel)"</string>
+    <string name="subtype_generic_compact">"<xliff:g id="LANGUAGE_NAME">%s</xliff:g> (compact)"</string>
+    <string name="subtype_no_language">"Geen taal (alfabet)"</string>
+    <string name="subtype_no_language_qwerty">"Alfabet (QWERTY)"</string>
+    <string name="custom_input_styles_title">"Aangepaste invoer"</string>
+    <string name="add_style">"Stijl toevoegen"</string>
+    <string name="add">"Toevoegen"</string>
+    <string name="remove">"Verwijderen"</string>
+    <string name="save">"Opslaan"</string>
+    <string name="subtype_locale">"Taal"</string>
+    <string name="keyboard_layout_set">"Lay-out"</string>
+    <string name="custom_input_style_note_message">"Je moet je aangepaste invoerstijl inschakelen voor je deze kunt gebruiken. Wil je de invoerstijl nu inschakelen?"</string>
+    <string name="enable">"Inschakelen"</string>
+    <string name="not_now">"Niet nu"</string>
+    <string name="custom_input_style_already_exists">"Dezelfde invoerstijl bestaat al: <xliff:g id="INPUT_STYLE_NAME">%s</xliff:g>"</string>
+    <string name="prefs_keypress_vibration_duration_settings">"Trilingsduur bij toetsgebruik"</string>
+    <string name="prefs_keypress_sound_volume_settings">"Geluidsvolume bij toetsgebruik"</string>
+    <string name="prefs_key_longpress_timeout_settings">"Lengte toetsinvoer"</string>
+    <string name="button_default">"Standaard"</string>
+    <string name="prefs_keyboard_height_settings">Toetsenbordhoogte</string>
+    <string name="keyboard_color">Kies aangepaste toetsenbordkleur</string>
+    <string name="hide_special_chars">Verberg speciale karakters</string>
+    <string name="hide_language_switch_key">Verberg taalkeuzetoets</string>
+    <string name="show_number_row">Aparte nummerrij</string>
+    <string name="space_swipe">Spatie-swipe beweegt cursor</string>
+    <string name="delete_swipe">Verwijder swipe</string>
+</resources>

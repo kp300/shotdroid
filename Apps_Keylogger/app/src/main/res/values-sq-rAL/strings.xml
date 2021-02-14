@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+/*
+**
+** Copyright 2008, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+ -->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="english_ime_input_options">"Opsionet e hyrjes"</string>
+    <string name="vibrate_on_keypress">"Lësho dridhje kur shtyp tastin"</string>
+    <string name="sound_on_keypress">"Lësho tingull kur shtyp tastin"</string>
+    <string name="popup_on_keypress">"Zmadhim germe kur shtyp"</string>
+    <string name="settings_screen_preferences">"Preferencat"</string>
+    <string name="settings_screen_appearance">"Pamja dhe struktura"</string>
+    <string name="settings_screen_advanced">"I përparuar"</string>
+    <string name="settings_screen_theme">"Tema"</string>
+    <string name="abbreviation_unit_milliseconds">"<xliff:g id="MILLISECONDS">%s</xliff:g> milisek."</string>
+    <string name="settings_system_default">"Parazgjedhja e sistemit"</string>
+    <string name="auto_cap">"Kapitalizim automatik"</string>
+    <string name="auto_cap_summary">"Kapitalizo fjalën e parë të çdo fjalie"</string>
+    <string name="language_selection_title">"Gjuhët"</string>
+    <string name="select_language">"Gjuhët"</string>
+    <string name="subtype_en_GB">"anglisht (MB)"</string>
+    <string name="subtype_en_US">"anglisht (SHBA)"</string>
+    <string name="subtype_es_US">"spanjisht (SHBA)"</string>
+    <string name="subtype_sr_ZZ">"serbisht (latin)"</string>
+    <string name="subtype_generic_traditional">"<xliff:g id="LANGUAGE_NAME">%s</xliff:g> (tradicionale)"</string>
+    <string name="subtype_generic_compact">"<xliff:g id="LANGUAGE_NAME">%s</xliff:g> (kompakte)"</string>
+    <string name="subtype_no_language">"nuk ka gjuhë (alfabeti)"</string>
+    <string name="subtype_no_language_qwerty">"alfabeti (QWERTY)"</string>
+    <string name="custom_input_styles_title">"Stile të personalizuara hyrjeje"</string>
+    <string name="add_style">"Shto stilizimin"</string>
+    <string name="add">"Shto"</string>
+    <string name="remove">"Hiq"</string>
+    <string name="save">"Ruaj"</string>
+    <string name="subtype_locale">"Gjuha"</string>
+    <string name="keyboard_layout_set">"Struktura"</string>
+    <string name="custom_input_style_note_message">"Stili yt i hyrjes ka nevojë të aktivizohet para se të fillosh përdorimin e tij. Dëshiron ta aktivizosh tani?"</string>
+    <string name="enable">"Aktivizo"</string>
+    <string name="not_now">"Jo tani!"</string>
+    <string name="custom_input_style_already_exists">"I njëjti stil hyrjesh ekziston tashmë: <xliff:g id="INPUT_STYLE_NAME">%s</xliff:g>"</string>
+    <string name="prefs_keypress_vibration_duration_settings">"Kohëzgjatja e dridhjes nga shtypja e tastit"</string>
+    <string name="prefs_keypress_sound_volume_settings">"Volumi i tingullit të tastit"</string>
+    <string name="prefs_key_longpress_timeout_settings">"Vonesa e shtypjes së gjatë të tastit"</string>
+    <string name="button_default">"I parazgjedhur"</string>
+    <string name="prefs_keyboard_height_settings">Lartësia e tastierës</string>
+    <string name="keyboard_color">Vendos ngjyrë tastiere me porosi</string>
+    <string name="hide_special_chars">Fshih karakteret speciale</string>
+    <string name="hide_language_switch_key">Fshi çelësin për ndryshimin e gjuhës</string>
+    <string name="show_number_row">Shfaq numrat në rresht të ndarë</string>
+    <string name="space_swipe">Lëvizjet e kursorit në tabin e hapsirës</string>
+    <string name="delete_swipe">Fshij rrëshqitjet</string>
+</resources>

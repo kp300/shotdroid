@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+/*
+**
+** Copyright 2008, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+ -->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="english_ime_input_options">"Настройки"</string>
+    <string name="vibrate_on_keypress">"Виброотклик клавиш"</string>
+    <string name="sound_on_keypress">"Звук клавиш"</string>
+    <string name="popup_on_keypress">"Увеличивать при нажатии"</string>
+    <string name="settings_screen_preferences">"Настройки"</string>
+    <string name="settings_screen_appearance">"Вид и раскладки"</string>
+    <string name="settings_screen_advanced">"Дополнительные настройки"</string>
+    <string name="settings_screen_theme">"Тема"</string>
+    <string name="abbreviation_unit_milliseconds">"<xliff:g id="MILLISECONDS">%s</xliff:g> мс"</string>
+    <string name="settings_system_default">"По умолчанию"</string>
+    <string name="auto_cap">"Заглавные автоматически"</string>
+    <string name="auto_cap_summary">"Писать первое слово предложения с прописной буквы"</string>
+    <string name="language_selection_title">"Выберите язык"</string>
+    <string name="select_language">"Язык"</string>
+    <string name="subtype_en_GB">"английский (Великобритания)"</string>
+    <string name="subtype_en_US">"английский (США)"</string>
+    <string name="subtype_es_US">"Испанский (США)"</string>
+    <string name="subtype_sr_ZZ">"Сербский (латиница)"</string>
+    <string name="subtype_generic_traditional">"<xliff:g id="LANGUAGE_NAME">%s</xliff:g> (классическая)"</string>
+    <string name="subtype_generic_compact">"<xliff:g id="LANGUAGE_NAME">%s</xliff:g> (компактная раскладка)"</string>
+    <string name="subtype_no_language">"Язык не определен (латиница)"</string>
+    <string name="subtype_no_language_qwerty">"Латиница (QWERTY)"</string>
+    <string name="custom_input_styles_title">"Свои стили ввода"</string>
+    <string name="add_style">"Добавить стиль"</string>
+    <string name="add">"Добавить"</string>
+    <string name="remove">"Удалить"</string>
+    <string name="save">"Сохранить"</string>
+    <string name="subtype_locale">"Язык"</string>
+    <string name="keyboard_layout_set">"Раскладка"</string>
+    <string name="custom_input_style_note_message">"Необходимо включить персонализированный стиль ввода."</string>
+    <string name="enable">"Включить"</string>
+    <string name="not_now">"Не сейчас"</string>
+    <string name="custom_input_style_already_exists">"Такой стиль ввода уже существует: <xliff:g id="INPUT_STYLE_NAME">%s</xliff:g>"</string>
+    <string name="prefs_keypress_vibration_duration_settings">"Вибросигнал при нажатии клавиш"</string>
+    <string name="prefs_keypress_sound_volume_settings">"Звук при нажатии клавиш"</string>
+    <string name="prefs_key_longpress_timeout_settings">"Долгое нажатие"</string>
+    <string name="button_default">"По умолчанию"</string>
+    <string name="prefs_keyboard_height_settings">Высота клавиатуры</string>
+    <string name="keyboard_color">Установить пользовательский цвет клавиатуры</string>
+    <string name="hide_special_chars">Скрыть специальные символы</string>
+    <string name="hide_language_switch_key">Скрыть клавишу переключения языка</string>
+    <string name="show_number_row">Показать ряд цифр</string>
+    <string name="space_swipe">Перемещать курсор пробелом</string>
+</resources>

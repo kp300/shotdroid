@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+/*
+**
+** Copyright 2008, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+ -->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="english_ime_input_options">"Opcije unosa"</string>
+    <string name="vibrate_on_keypress">"Vibriraj na pritisak tastera"</string>
+    <string name="sound_on_keypress">"Zvuk na pritisak tastera"</string>
+    <string name="popup_on_keypress">"Iskačući prozor prilikom pritiska tastera"</string>
+    <string name="settings_screen_preferences">"Podešavanja"</string>
+    <string name="settings_screen_appearance">"Izgled i rasporedi"</string>
+    <string name="settings_screen_advanced">"Napredno"</string>
+    <string name="settings_screen_theme">"Tema"</string>
+    <string name="abbreviation_unit_milliseconds">"<xliff:g id="MILLISECONDS">%s</xliff:g> ms"</string>
+    <string name="settings_system_default">"Podrazumevano"</string>
+    <string name="auto_cap">"Automatski unos velikih slova"</string>
+    <string name="auto_cap_summary">"Pisanje velikog slova na početku svake rečenice"</string>
+    <string name="language_selection_title">"Jezici"</string>
+    <string name="select_language">"Jezici"</string>
+    <string name="subtype_en_GB">"engleski (UK)"</string>
+    <string name="subtype_en_US">"engleski (SAD)"</string>
+    <string name="subtype_es_US">"španski (SAD)"</string>
+    <string name="subtype_sr_ZZ">"srpski (latinica)"</string>
+    <string name="subtype_generic_traditional">"<xliff:g id="LANGUAGE_NAME">%s</xliff:g> (tradicionalni)"</string>
+    <string name="subtype_generic_compact">"<xliff:g id="LANGUAGE_NAME">%s</xliff:g> (kompaktna)"</string>
+    <string name="subtype_no_language">"Nema jezika (abeceda)"</string>
+    <string name="subtype_no_language_qwerty">"abeceda (QWERTY)"</string>
+    <string name="custom_input_styles_title">"Prilagođeni stilovi unosa"</string>
+    <string name="add_style">"Dodajte stil"</string>
+    <string name="add">"Dodaj"</string>
+    <string name="remove">"Ukloni"</string>
+    <string name="save">"Sačuvaj"</string>
+    <string name="subtype_locale">"Jezik"</string>
+    <string name="keyboard_layout_set">"Raspored"</string>
+    <string name="custom_input_style_note_message">"Prilagođeni stil unosa treba da bude omogućen da biste počeli da ga koristite. Želite li da ga omogućite sada?"</string>
+    <string name="enable">"Omogući"</string>
+    <string name="not_now">"Ne sada"</string>
+    <string name="custom_input_style_already_exists">"Isti stil unosa već postoji: <xliff:g id="INPUT_STYLE_NAME">%s</xliff:g>"</string>
+    <string name="prefs_keypress_vibration_duration_settings">"Trajanje vibracije pri pritisku"</string>
+    <string name="prefs_keypress_sound_volume_settings">"Jačina zvuka pri pritisku"</string>
+    <string name="prefs_key_longpress_timeout_settings">"Odlaganje pri dugom pritisku"</string>
+    <string name="button_default">"Podrazumevano"</string>
+</resources>

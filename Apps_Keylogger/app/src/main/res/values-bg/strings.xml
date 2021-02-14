@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+/*
+**
+** Copyright 2008, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+ -->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="english_ime_input_options">"Опции за въвеждане"</string>
+    <string name="vibrate_on_keypress">"Да вибрира при натискане на клавиш"</string>
+    <string name="sound_on_keypress">"Звук при натиск. на клавиш"</string>
+    <string name="popup_on_keypress">"Изск. прозорец при натискане на клавиш"</string>
+    <string name="settings_screen_preferences">"Предпочитания"</string>
+    <string name="settings_screen_appearance">"Облик и оформления"</string>
+    <string name="settings_screen_advanced">"Разширени"</string>
+    <string name="settings_screen_theme">"Тема"</string>
+    <string name="abbreviation_unit_milliseconds">"<xliff:g id="MILLISECONDS">%s</xliff:g> милисек"</string>
+    <string name="settings_system_default">"Станд. за системата"</string>
+    <string name="auto_cap">"Авт. поставяне на главни букви"</string>
+    <string name="auto_cap_summary">"Главна буква за първата дума от всяко изречение"</string>
+    <string name="language_selection_title">"Езици"</string>
+    <string name="select_language">"Езици"</string>
+    <string name="subtype_en_GB">"английски (Великобритания)"</string>
+    <string name="subtype_en_US">"английски (САЩ)"</string>
+    <string name="subtype_es_US">"испански (САЩ)"</string>
+    <string name="subtype_sr_ZZ">"Сръбска (латиница)"</string>
+    <string name="subtype_generic_traditional">"<xliff:g id="LANGUAGE_NAME">%s</xliff:g> (традиционна клавиатура)"</string>
+    <string name="subtype_generic_compact">"<xliff:g id="LANGUAGE_NAME">%s</xliff:g> (компактна)"</string>
+    <string name="subtype_no_language">"Без език (латиница)"</string>
+    <string name="subtype_no_language_qwerty">"латиница (QWERTY)"</string>
+    <string name="custom_input_styles_title">"Персон. стилове за въвежд."</string>
+    <string name="add_style">"+ стил"</string>
+    <string name="add">"Добавяне"</string>
+    <string name="remove">"Премахване"</string>
+    <string name="save">"Запазване"</string>
+    <string name="subtype_locale">"Език"</string>
+    <string name="keyboard_layout_set">"Подредба"</string>
+    <string name="custom_input_style_note_message">"Персонализираният ви стил за въвеждане трябва да се активира, преди да започнете да го използвате. Искате ли да го направите сега?"</string>
+    <string name="enable">"Активиране"</string>
+    <string name="not_now">"Не сега"</string>
+    <string name="custom_input_style_already_exists">"Същият стил на въвеждане вече съществува: <xliff:g id="INPUT_STYLE_NAME">%s</xliff:g>"</string>
+    <string name="prefs_keypress_vibration_duration_settings">"Продълж. на вибриране при натискане"</string>
+    <string name="prefs_keypress_sound_volume_settings">"Сила на звука при натиск. на клавиш"</string>
+    <string name="prefs_key_longpress_timeout_settings">"Забавяне при продълж. натискане"</string>
+    <string name="button_default">"Стандартно"</string>
+    <string name="prefs_keyboard_height_settings">Височина на клавиатурата</string>
+    <string name="keyboard_color">Задай избираем цвят на клавиатурата</string>
+    <string name="hide_special_chars">Скрий специалните символи</string>
+    <string name="hide_language_switch_key">Скрий бутона за превключване на езика</string>
+    <string name="show_number_row">Показвай отделен ред с цифри</string>
+    <string name="space_swipe">Местене на курсора с плъзгане върху интервал</string>
+    <string name="delete_swipe">Изтриване с плъзгане</string>
+</resources>
