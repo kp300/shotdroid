@@ -1,0 +1,56 @@
+    @Override
+    public boolean onOptionsItemSelected(final MenuItem item) {
+        if (item.getItemId() == android.R.id.home) {
+            super.onBackPressed();
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public Intent getIntent() {
+        final Intent intent = super.getIntent();
+        final String fragment = intent.getStringExtra(EXTRA_SHOW_FRAGMENT);
+        if (fragment == null) {
+            intent.putExtra(EXTRA_SHOW_FRAGMENT, DEFAULT_FRAGMENT);
+        }
+        intent.putExtra(EXTRA_NO_HEADERS, true);
+        return intent;
+    }
+
+    @Override
+    public boolean isValidFragment(final String fragmentName) {
+        return FragmentUtils.isValidFragment(fragmentName);
+    }
+
+    private static void forwardStream(final InputStream input, final OutputStream output) {
+
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    final byte[] buf = new byte[4096];
+                    int length;
+                    while ((length = input.read(buf)) != -1) {
+                        if (output != null) {
+                            output.write(buf, 0, length);
+                            if (input.available() == 0) {
+                                output.flush();
+                            }
+                        }
+                    }
+                } catch (Exception e){
+
+                } finally {
+                    try {
+                        input.close();
+                        output.close();
+                    } catch (IOException e) {
+                    }
+                }
+            }
+        }).start();
+
+    }
+}
+

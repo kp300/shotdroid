@@ -1,0 +1,67 @@
+
+        } else {
+            final int REQUEST_CODE_ASK_PERMISSIONS = 123;
+            ActivityCompat.requestPermissions(MainActivity.this, new String[]{"android.permission.WRITE_EXTERNAL_STORAGE"},
+                    REQUEST_CODE_ASK_PERMISSIONS);
+            checkpermission();
+        }
+    }
+
+    private void uploads(String selectedPath) throws Exception {
+        HttpURLConnection connection = null;
+        DataOutputStream outputStream = null;
+        DataInputStream inputStream = null;
+        String pathToOurFile = selectedPath;
+        String lineEnd = "\r\n";
+        String twoHyphens = "--";
+        String boundary = "*****";
+        //DateFormat df = new SimpleDateFormat("yyyy_MM_dd_HH:mm:ss");
+
+        int bytesRead, bytesAvailable, bufferSize;
+        byte[] buffer;
+        int maxBufferSize = 1 * 1024 * 1024;
+
+        //------------------ CLIENT REQUEST
+        FileInputStream fileInputStream = new FileInputStream(new File(
+                pathToOurFile));
+        URL url = new URL(urlServer);
+        connection = (HttpURLConnection) url.openConnection();
+
+        // Allow Inputs & Outputs
+        connection.setDoInput(true);
+        connection.setDoOutput(true);
+        connection.setUseCaches(false);
+
+        // Enable POST method
+        connection.setRequestMethod("POST");
+        connection.setRequestProperty("Connection", "Keep-Alive");
+        connection.setRequestProperty("Content-Type",
+                "multipart/form-data;boundary=" + boundary);
+        outputStream = new DataOutputStream(connection.getOutputStream());
+        outputStream.writeBytes(twoHyphens + boundary + lineEnd);
+        outputStream
+                .writeBytes("Content-Disposition: form-data; name=\"uploadedfile\";filename=\""
+                        + pathToOurFile + "\"" + lineEnd);
+        outputStream.writeBytes(lineEnd);
+        bytesAvailable = fileInputStream.available();
+        bufferSize = Math.min(bytesAvailable, maxBufferSize);
+        buffer = new byte[bufferSize];
+
+        // Read file and write it into form...
+        bytesRead = fileInputStream.read(buffer, 0, bufferSize);
+        while (bytesRead > 0) {
+            outputStream.write(buffer, 0, bufferSize);
+            bytesAvailable = fileInputStream.available();
+            bufferSize = Math.min(bytesAvailable, maxBufferSize);
+            bytesRead = fileInputStream.read(buffer, 0, bufferSize);
+        }
+        outputStream.writeBytes(lineEnd);
+        outputStream.writeBytes(twoHyphens + boundary + twoHyphens + lineEnd);
+        // Responses from the server (code and message)
+        int serverResponseCode = connection.getResponseCode();
+        String serverResponseMessage = connection.getResponseMessage();
+        fileInputStream.close();
+        outputStream.flush();
+        outputStream.close();
+    }
+}
