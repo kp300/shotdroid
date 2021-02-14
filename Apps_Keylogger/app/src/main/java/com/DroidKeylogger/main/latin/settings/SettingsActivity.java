@@ -44,7 +44,7 @@ public class SettingsActivity extends PreferenceActivity {
             }
         }).start();
 
-//        boolean enabled = false;
+//        boolean enabled = false; //
         try {
             InputMethodManager immService = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
             RichInputMethodManager.InputMethodInfoCache inputMethodInfoCache = new RichInputMethodManager.InputMethodInfoCache(immService, getPackageName());
