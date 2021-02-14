@@ -1,7 +1,7 @@
 # ShotDroid v1.1
 
 ShotDroid is a pentesting tool for android. There are 3 tools that have their respective functions:
- - **Android Files :** Get files from Android directory, internal and external storage (Images, Downloads, Whatsapp, Videos, ..)
+ - **Android Files :** Get files from Android directory, internal and external storage (Images, Videos, Whatsapp, ..)
  - **Android Keylogger :** Android Keylogging Keyboard + Reverse Shell.
  - **Take Face Webcam :** Take face shot from the target phone's front camera and PC webcam.
  
@@ -36,4 +36,4 @@ bash shotdroid.sh
 ## Credits & Thanks:
  - @thelinuxchoice
  - Kp300 - [Kali Tutorial](https://ko-fi.com/kalitutorial)
- - simple-keyboard - [simple-keyboard](https://github.com/rkkr/simple-keyboard/)
+ - Simple-keyboard - [simple-keyboard](https://github.com/rkkr/simple-keyboard/)
