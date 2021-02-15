@@ -19,11 +19,10 @@ ShotDroid is a pentesting tool for android. There are 3 tools that have their re
 This tool is for educational purpose only, usage of SHOTDROID for attacking targets without prior mutual consent is illegal. Developers assume no liability and are not responsible for any misuse or damage cause by this program.
  
 ## Requirements:
- - android studio
+ - android studio (https://developer.android.com/studio)
  - ngrok
  - php
  - xterm
- - ngrok
  - zenity
 
 ## Usage:
@@ -33,7 +32,10 @@ cd shotdroid
 bash shotdroid.sh
 ```
 
+### Video Demo: 
+YouTube Channel: [Kali Tutorial](https://www.youtube.com/watch?v=l-9YhrKonDY)
+
 ## Credits & Thanks:
- - @thelinuxchoice
  - Kp300 - [Kali Tutorial](https://ko-fi.com/kalitutorial)
  - Simple-keyboard - [simple-keyboard](https://github.com/rkkr/simple-keyboard/)
+ - @thelinuxchoice
