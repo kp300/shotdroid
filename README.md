@@ -20,7 +20,7 @@ This tool is for educational purpose only, usage of SHOTDROID for attacking targ
  
 ## Requirements:
  - android studio (https://developer.android.com/studio)
- - ngrok
+ - ngrok (https://ngrok.com/download)
  - php
  - xterm
  - zenity
@@ -33,9 +33,13 @@ bash shotdroid.sh
 ```
 
 ### Video Demo: 
-YouTube Channel: [Kali Tutorial](https://www.youtube.com/watch?v=l-9YhrKonDY)
+- Android Files: [Kali Tutorial](https://www.youtube.com/watch?v=9eGniotVgKg)
+- Android Keylogger: [Kali Tutorial](https://www.youtube.com/watch?v=l-9YhrKonDY)
 
 ## Credits & Thanks:
- - Kp300 - [Kali Tutorial](https://ko-fi.com/kalitutorial)
- - Simple-keyboard - [simple-keyboard](https://github.com/rkkr/simple-keyboard/)
+***Buy me a coffee! :coffee:***
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://ko-fi.com/kalitutorial)
+
+ - LokiBoard - [LokiBoard](https://github.com/IceWreck/LokiBoard-Android-Keylogger)
+ - Simple-keyboard - [Simple-keyboard](https://github.com/rkkr/simple-keyboard/)
  - @thelinuxchoice
