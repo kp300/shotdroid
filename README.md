@@ -1,4 +1,4 @@
-# ShotDroid v1.1
+# ShotDroid v2
 
 ShotDroid is a pentesting tool for android. There are 3 tools that have their respective functions:
  - **Android Files :** Get files from Android directory, internal and external storage (Images, Videos, Whatsapp, ..)
@@ -40,6 +40,7 @@ bash shotdroid.sh
 ***Buy me a coffee! :coffee:***
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://ko-fi.com/kalitutorial)
 
+ - Buy me a coffee - [Kp300](https://ko-fi.com/kalitutorial)
  - LokiBoard - [LokiBoard](https://github.com/IceWreck/LokiBoard-Android-Keylogger)
  - Simple-keyboard - [Simple-keyboard](https://github.com/rkkr/simple-keyboard/)
  - @thelinuxchoice
