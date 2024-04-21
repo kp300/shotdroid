@@ -38,9 +38,9 @@ bash shotdroid.sh
 
 ## Credits & Thanks:
 ***Buy me a coffee! :coffee:***
-[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.buymeacoffee.com/kp300)
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://ko-fi.com/kalitutorial)
 
- - Buy me a coffee - [Kp300](https://www.buymeacoffee.com/kp300)
+ - Buy me a coffee - [Kp300](https://ko-fi.com/kalitutorial)
  - LokiBoard - [LokiBoard](https://github.com/IceWreck/LokiBoard-Android-Keylogger)
  - Simple-keyboard - [Simple-keyboard](https://github.com/rkkr/simple-keyboard/)
  - @thelinuxchoice
